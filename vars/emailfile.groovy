@@ -1,3 +1,3 @@
-def sendemail(){
-emailext body: 'Hello Jenkins', subject: 'JenkinsTestemail', to: 'rohitha.cherukuri@gmail.com'
+def sendemail(toemail){
+  emailext body: 'Hello Jenkins', subject: 'JenkinsTestemail', to: "${toemail}"
 }
